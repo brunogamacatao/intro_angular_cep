@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html ng-app="BuscaCep">
+<head>
+  <title>Data Binding</title>
+</head>
+<body ng-controller="CepCtrl">
+  CEP: 
+  <input ng-model="cep"/>
+  <button ng-click="buscar()">Buscar</button>
+
+  <br/>
+  <h3 ng-if="endereco">
+  {{endereco.logradouro}} - {{endereco.bairro}} - 
+  {{endereco.localidade}} - {{endereco.uf}}
+  </h3>
+
+  <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
+
+
